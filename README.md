@@ -2,6 +2,15 @@
 
 A lightweight, responsive static website prepared for GitHub Pages.
 
+## Landing-page versions
+
+- `index.html` (or `red.html`) uses the dark red design.
+- `white.html` uses the white design.
+
+After deployment, open `https://username.github.io/repository/` for the red
+version or `https://username.github.io/repository/white.html` for the white
+version.
+
 ## Preview locally
 
 From this directory, start any static file server:
