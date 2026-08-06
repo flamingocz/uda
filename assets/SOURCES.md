@@ -9,6 +9,8 @@ Accessed 2026-08-06.
 | `logo.jpeg` | User-supplied UDA logo | Header and footer branding | Supplied by project owner |
 | `thethi.jpg` | Pre-existing project asset | Albanian Alps hero | Existing local asset; origin not documented |
 | `images/flamingo.jpeg` | User-supplied | Intro flamingo symbol | Supplied by project owner |
+| `kollonat.jpg` | Pre-existing project asset | V1 activity photograph | Existing local asset; origin not documented |
+| `gjirokastra.jpg` | Pre-existing project asset | V1 community-values photograph | Existing local asset; origin not documented |
 
 ## Downloaded icons
 
