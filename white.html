@@ -8,52 +8,81 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="theme-white">
-  <header class="hero" aria-label="United Diaspora for Albania">
-    <a class="brand" href="./white.html" aria-label="United Diaspora for Albania — Ballina">
-      <img src="assets/logo.jpeg" alt="United Diaspora for Albania">
-    </a>
-  </header>
-  <main>
-    <section class="intro panel" aria-labelledby="intro-title">
-      <h1 id="intro-title">NGA ALPET NË JON, KY ËSHTË ATDHEU YNË.</h1>
-      <p class="eyebrow">Rrjeti më i madh i decentralizuar i komunitetit shqiptar në diasporë</p>
-      <nav class="intro-links" aria-label="Rreth organizatës">
-        <div>
-          <a href="#placeholder">Pak histori…</a><a href="#placeholder">Prezantim</a>
-          <a href="#placeholder">Misioni</a><a href="#placeholder">Vizioni</a>
-        </div>
-        <div>
-          <a href="#placeholder">Rrënjët në Shqipëri</a><a href="#placeholder">Degët në 25 vende të botës</a>
-          <a href="#placeholder">Rrjetet e aktivistëve tanë</a><a href="#placeholder">Harta</a>
-        </div>
-      </nav>
-    </section>
-    <div class="photo-band photo-band--columns" role="img" aria-label="Arkitekturë historike shqiptare"></div>
-    <section class="activities panel" aria-labelledby="activities-title">
-      <h2 id="activities-title">SHTYLLAT TONA TË AKTIVIZMIT</h2>
-      <nav class="activity-links" aria-label="Shtyllat e aktivizmit">
-        <a href="#placeholder">Protestat globale</a>
-        <a href="#placeholder">Lobim në institucionet ndërkombëtare</a>
-        <a href="#placeholder">Deklarata dhe qëndrime zyrtare</a>
-        <a href="#placeholder">Referendumi<br>Shfuqizimi 21/2024</a>
-        <a href="#placeholder">Ndërgjegjësimi publik online</a>
-        <a href="#placeholder">Investigimet e pavarura</a>
-      </nav>
-    </section>
-    <div class="photo-band photo-band--castle" role="img" aria-label="Kështjellë historike shqiptare"></div>
-    <section class="values panel" aria-labelledby="values-title">
-      <h2 id="values-title">VLERAT E KOMUNITETIT</h2>
-      <div class="value-grid">
-        <a href="#placeholder"><span aria-hidden="true">◆</span>Interesi kombëtar shqiptar</a>
-        <a href="#placeholder"><span aria-hidden="true">●●●</span>Bashkimi i diasporës</a>
-        <a href="#placeholder"><span aria-hidden="true">⚖</span>Pavarësi dhe përgjegjësi</a>
-        <a href="#placeholder"><span aria-hidden="true">●♥●</span>Familja tradicionale shqiptare</a>
-        <a href="#placeholder"><span aria-hidden="true">♟♟♟</span>Mbrojtja e tokës shqiptare</a>
+  <header class="site-header">
+    <nav class="top-nav shell" aria-label="Navigimi kryesor">
+      <a class="brand" href="./white.html"><img src="assets/logo.jpeg" alt="United Diaspora for Albania"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menu</button>
+      <div class="main-menu" id="main-menu">
+        <a class="active" href="#home">Kreu</a><a href="#about">Rreth nesh</a><a href="#purpose">Qëllimi</a>
+        <a href="#activities">Aktivitetet</a><a href="#placeholder">Publikime</a>
+        <a href="#join">Bashkohu</a><a href="#contact">Kontakt</a>
+        <a class="button button--solid" href="#join">Bashkohu tani</a>
       </div>
-      <p class="join">JOIN OUR COMMUNITY<br>FOLLOW OUR ADVOCACY</p>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="hero-content shell">
+        <h1 id="hero-title">NGA ALPET NË JON,</h1>
+        <p class="hero-script">ky është amaneti jonë.</p>
+        <p class="hero-subtitle">Largest decentralized community network<br>of the Albanian diaspora</p>
+        <div class="hero-rule"></div>
+        <div class="intro-grid" id="about">
+          <a class="intro-card" href="#placeholder">
+            <img class="photo-icon flamingo" src="assets/images/flamingo.jpeg" alt="">
+            <span>Si Flamingo Revolution<br>bashkoi Diasporën</span>
+          </a>
+          <a class="intro-card" href="#placeholder">
+            <img class="photo-icon globe" src="assets/icons/world.svg" alt="">
+            <span>Rrënjët në Shqipëri,<br>Degët në 25 vende të botës<br>(Përmes aktivistëve tanë<br>Harta)</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section activities shell" id="activities" aria-labelledby="activities-title">
+      <p class="section-kicker">Çfarë bëjmë</p>
+      <h2 id="activities-title">Shtyllat tona të aktivizmit</h2>
+      <div class="short-rule"></div>
+      <div class="activity-grid">
+        <a class="feature" href="#placeholder"><img src="assets/icons/megaphone.svg" alt=""><h3>Protestat globale</h3><p>Zëri ynë, fuqia jonë.</p></a>
+        <a class="feature" href="#placeholder"><img src="assets/icons/building-bank.svg" alt=""><h3>Lobim në institucionet ndërkombëtare</h3><p>Për drejtësi dhe llogaridhënie.</p></a>
+        <a class="feature" href="#placeholder"><img src="assets/icons/file-pencil.svg" alt=""><h3>Deklarata dhe qëndrime zyrtare</h3><p>Fjala jonë, pozicioni ynë.</p></a>
+        <a class="feature" href="#placeholder"><img src="assets/icons/ballot-box.svg" alt=""><h3>Referendumi<br>Shfuqizimi 21/2024</h3><p>Votë e lirë, ndryshim i ligjshëm.</p></a>
+        <a class="feature feature--wide" href="#placeholder"><img src="assets/icons/device-desktop.svg" alt=""><h3>Ndërgjegjësimi publik online</h3><p>Informim. Edukim. Mobilizim.</p></a>
+        <a class="feature feature--wide" href="#placeholder"><img src="assets/icons/search.svg" alt=""><h3>Investigimet e pavarura</h3><p>E vërteta na çon përpara.</p></a>
+      </div>
+    </section>
+
+    <section class="section values shell" id="purpose" aria-labelledby="values-title">
+      <p class="section-kicker">Vlerat e komunitetit</p>
+      <div class="short-rule"></div>
+      <h2 class="visually-hidden" id="values-title">Vlerat e komunitetit</h2>
+      <div class="value-grid">
+        <a class="value" href="#placeholder"><img src="assets/icons/shield.svg" alt=""><h3>Interesi kombëtar shqiptar</h3><p>Mbi çdo gjë.</p></a>
+        <a class="value" href="#placeholder"><img src="assets/icons/users-group.svg" alt=""><h3>Bashkimi i diasporës</h3><p>Të bashkuar, më të fortë.</p></a>
+        <a class="value" href="#placeholder"><img src="assets/icons/scale.svg" alt=""><h3>Pavarësi dhe përgjegjësi</h3><p>Liri mendimi, përgjegjësi veprimi.</p></a>
+        <a class="value" href="#placeholder"><img src="assets/icons/home-heart.svg" alt=""><h3>Familja tradicionale shqiptare</h3><p>Vlerat që na bëjnë të jemi.</p></a>
+        <a class="value" href="#placeholder"><img src="assets/icons/home-eco.svg" alt=""><h3>Mbrojtja e tokës shqiptare</h3><p>E ardhmja jonë, toka jonë.</p></a>
+      </div>
+    </section>
+
+    <section class="join shell" id="join" aria-labelledby="join-title">
+      <div><h2 id="join-title">Bëhu pjesë e lëvizjes</h2><p>Bashkohu me komunitetin tonë dhe bëhu pjesë<br>e ndryshimit që duam të shohim.</p></div>
+      <div class="join-actions"><a class="button button--solid" href="#placeholder">Bashkohu tani</a><a class="button" href="#placeholder">Na ndiq dhe mbështet</a></div>
     </section>
   </main>
-  <footer><p>© <span id="year">2026</span> United Diaspora for Albania</p></footer>
+
+  <footer id="contact">
+    <div class="footer-inner shell">
+      <div class="footer-brand"><img src="assets/logo.jpeg" alt="United Diaspora for Albania"><p>Rrënjët në Shqipëri.<br>Degët në botë.<br>Zëri ynë, një.</p></div>
+      <nav aria-label="Navigimi në fund"><a href="#about">Rreth nesh</a><a href="#placeholder">Dokumente</a><a href="#placeholder">Publikime</a><a href="#placeholder">Lajme</a><a href="#contact">Kontakt</a></nav>
+      <div class="socials"><a href="#placeholder"><img src="assets/icons/brand-facebook.svg" alt="Facebook"></a><a href="#placeholder"><img src="assets/icons/brand-instagram.svg" alt="Instagram"></a><a href="#placeholder"><img src="assets/icons/brand-youtube.svg" alt="YouTube"></a><a href="#placeholder"><img src="assets/icons/mail.svg" alt="Email"></a></div>
+      <p class="copyright">© <span id="year">2026</span> Të gjitha të drejtat e rezervuara.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
