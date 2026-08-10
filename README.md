@@ -11,7 +11,7 @@ A lightweight Albanian-language static website built with HTML, CSS, and minimal
 - `aktivitetet.html`: ongoing activities
 - `publikime.html`: open letters and international-lobbying publications
 - “Bashkohu” links open the official external Google membership form directly.
-- `kontakt.html`: approved contact fields; submission remains disabled until an endpoint is supplied
+- `kontakt.html`: contact form that prepares an email to `diasporabashke@gmail.com`
 - `v1-red.html` and `v1-white.html`: preserved legacy versions
 
 ## Preview locally
@@ -35,7 +35,7 @@ All production links and assets use relative paths, so the site works at a proje
 
 ## Outstanding launch items
 
-- Supply an official contact email or form-processing endpoint before enabling `kontakt.html`.
+- Add a hosted form-processing endpoint later if messages should be sent without opening the visitor's email application.
 - Confirm/copy the publication files marked “Skedari në pritje.”
 - Resolve the editorial differences documented in `AUDIT.md`.
 - Confirm web-embedding licenses before adding any bundled Swiss 721 BT or Barely Handwritten font.

@@ -28,3 +28,25 @@ if (menuButton && menu) {
     if (window.innerWidth > 980) closeMenu();
   });
 }
+
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!contactForm.reportValidity()) return;
+
+    const data = new FormData(contactForm);
+    const subject = data.get("subject");
+    const body = [
+      `Emri dhe Mbiemri: ${data.get("name")}`,
+      `Email: ${data.get("email")}`,
+      `Shteti i banimit: ${data.get("country")}`,
+      `Numri i telefonit: ${data.get("phone") || "Nuk është dhënë"}`,
+      "",
+      data.get("message"),
+    ].join("\n");
+
+    window.location.href = `mailto:diasporabashke@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
+}

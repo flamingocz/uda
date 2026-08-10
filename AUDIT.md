@@ -6,7 +6,7 @@
 - Replaced the burgundy full-page palette with a dark anthracite theme and a light theme. Red is now limited to accents and calls to action.
 - Replaced the old JPEG logo and generic content icons with official UDA assets.
 - Added About, Purpose, Activities, Publications, Join, and Contact pages.
-- Removed unsupported Facebook, YouTube, and email links; only `@uda.network` is presented.
+- Removed unsupported Facebook and YouTube links. Confirmed contact channels are `diasporabashke@gmail.com` and `@uda.network`.
 - Removed the local membership page; all “Bashkohu” links now open the approved Google Form directly.
 - Preserved all legacy v1 files.
 
@@ -50,9 +50,9 @@ Swiss 721 BT and Barely Handwritten were not embedded because the supplied archi
 - Stray apostrophes removed from headings
 - Albanian accents normalized in display metadata
 
-## Launch blocker
+## Contact implementation
 
-No official contact email or form endpoint was supplied. The approved contact fields are displayed in a disabled form, and no success response is simulated. Enable submission only after a real endpoint is configured.
+The confirmed email is `diasporabashke@gmail.com`. Because GitHub Pages has no backend, the contact form validates the approved fields and opens a pre-addressed email in the visitor's email application. It does not display a false success response. A hosted form-processing endpoint would still be required for direct background submission.
 
 ## Difference from v3.pdf
 
