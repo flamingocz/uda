@@ -98,7 +98,7 @@ p { margin-top: 0; }
 .instagram-link img { width: 24px; filter: invert(1); }
 .copyright { grid-column: 1 / -1; margin: 1rem 0 0; color: #aaa; font-size: .75rem; text-align: center; }
 
-.page-hero { padding-block: clamp(5rem, 10vw, 8rem); color: #fff; background: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 78%)), url("assets/images/mountains/Mountain B1.png") center / cover; }
+.page-hero { padding-block: clamp(5rem, 10vw, 8rem); color: #fff; background: linear-gradient(rgb(0 0 0 / 68%), rgb(0 0 0 / 78%)), url("assets/images/mountains/Mountain E1.jpg") center / cover; }
 .page-hero h1 { margin-bottom: 1rem; }
 .page-hero p { max-width: 760px; margin-bottom: 0; font-size: 1.15rem; }
 .prose { max-width: 820px; }
