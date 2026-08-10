@@ -82,7 +82,7 @@ p { margin-top: 0; }
 .value-card { border-radius: 0; box-shadow: none; text-align: center; }
 .value-card:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; background: var(--card); }
 .value-card img { width: 72px; height: 72px; }
-.sea-band { min-height: clamp(260px, 38vw, 480px); padding: 0; background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 30%)), url("assets/images/sea/sea-2.jpg") center 58% / cover no-repeat; }
+.sea-band { min-height: clamp(260px, 38vw, 480px); padding: 0; background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 30%)), url("assets/images/sea/Sea B1.png") center 58% / cover no-repeat; }
 .cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--color-red-ui); border-radius: var(--radius); }
 .cta-panel h2 { margin-bottom: .75rem; }
 .cta-panel p:last-child { max-width: 640px; margin-bottom: 0; color: var(--muted); }
