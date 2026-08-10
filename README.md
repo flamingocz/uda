@@ -1,38 +1,43 @@
 # United Diaspora for Albania
 
-A lightweight, responsive static website prepared for GitHub Pages.
+A lightweight Albanian-language static website built with HTML, CSS, and minimal vanilla JavaScript for GitHub Pages.
 
-## Landing-page versions
+## Pages
 
-- `index.html` (or `red.html`) uses the dark red design.
-- `white.html` uses the white design.
-- `v1-red.html` preserves the original red three-photo design.
-- `v1-white.html` provides the matching original white design.
-
-After deployment, open `https://username.github.io/repository/` for the red
-version or `https://username.github.io/repository/white.html` for the white
-version.
+- `index.html` and `red.html`: primary dark/anthracite theme with red accents
+- `white.html`: matching light theme
+- `rreth-nesh.html`: organization history and geographic presence
+- `qellimi.html`: mission, vision, and objectives
+- `aktivitetet.html`: ongoing activities
+- `publikime.html`: open letters and international-lobbying publications
+- `bashkohu.html`: link to the official membership form
+- `kontakt.html`: approved contact fields; submission remains disabled until an endpoint is supplied
+- `v1-red.html` and `v1-white.html`: preserved legacy versions
 
 ## Preview locally
 
-From this directory, start any static file server:
+From this directory, run:
 
-    python3 -m http.server 8000
+```sh
+python3 -m http.server 8000
+```
 
-Then open http://localhost:8000.
+Then visit `http://localhost:8000/` and `http://localhost:8000/white.html`.
 
-## Add real destinations
+## GitHub Pages
 
-Navigation uses `#placeholder` because destination URLs were not provided.
-Replace each occurrence in `index.html` with the appropriate relative path or
-external URL.
+1. Push this directory to the repository's publishing branch.
+2. Open **Settings → Pages** in GitHub.
+3. Choose **Deploy from a branch**.
+4. Select the branch and `/(root)`, then save.
 
-## Deploy with GitHub Pages
+All production links and assets use relative paths, so the site works at a project URL such as `https://username.github.io/repository/`.
 
-1. Push this directory to a GitHub repository.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the site branch and the `/(root)` folder, then save.
+## Outstanding launch items
 
-All asset references are relative, so the site also works at a project URL such
-as `https://username.github.io/repository/`.
+- Supply an official contact email or form-processing endpoint before enabling `kontakt.html`.
+- Confirm/copy the publication files marked “Skedari në pritje.”
+- Resolve the editorial differences documented in `AUDIT.md`.
+- Confirm web-embedding licenses before adding any bundled Swiss 721 BT or Barely Handwritten font.
+
+Asset provenance is documented in `assets/SOURCES.md`.

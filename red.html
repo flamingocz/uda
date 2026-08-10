@@ -3,84 +3,106 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="United Diaspora for Albania — rrjeti i komunitetit shqiptar.">
+  <meta name="description" content="United Diaspora for Albania — një rrjet i bashkuar dhe i decentralizuar i diasporës shqiptare.">
   <title>United Diaspora for Albania</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="theme-red">
+<body class="theme-dark">
+  <a class="skip-link" href="#main">Kalo te përmbajtja</a>
   <header class="site-header">
-    <nav class="top-nav shell" aria-label="Navigimi kryesor">
-      <a class="brand" href="./"><img src="assets/logo.jpeg" alt="United Diaspora for Albania"></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">Menu</button>
+    <nav class="site-nav container" aria-label="Navigimi kryesor">
+      <a class="brand" href="./" aria-label="UDA — Kreu"><img src="assets/logos/uda-logo-white.png" alt="United Diaspora for Albania"></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu"><span>Menu</span></button>
       <div class="main-menu" id="main-menu">
-        <a class="active" href="#home">Kreu</a><a href="#about">Rreth nesh</a><a href="#purpose">Qëllimi</a>
-        <a href="#activities">Aktivitetet</a><a href="#placeholder">Publikime</a>
-        <a href="#join">Bashkohu</a><a href="#contact">Kontakt</a>
-        <a class="button button--solid" href="#join">Bashkohu tani</a>
+        <a aria-current="page" href="./">Kreu</a>
+        <a href="rreth-nesh.html">Rreth nesh</a>
+        <a href="qellimi.html">Qëllimi</a>
+        <a href="aktivitetet.html">Aktivitetet</a>
+        <a href="publikime.html">Publikime</a>
+        <a href="bashkohu.html">Bashkohu</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a class="button button-primary" href="bashkohu.html">Bashkohu me ne</a>
       </div>
     </nav>
   </header>
 
-  <main>
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-shade"></div>
-      <div class="hero-content shell">
-        <h1 id="hero-title">NGA ALPET NË JON,</h1>
-        <p class="hero-script">ky është amaneti jonë.</p>
-        <p class="hero-subtitle">Largest decentralized community network<br>of the Albanian diaspora</p>
-        <div class="hero-rule"></div>
-        <div class="intro-grid" id="about">
-          <a class="intro-card" href="#placeholder">
-            <img class="photo-icon flamingo" src="assets/images/flamingo.jpeg" alt="">
-            <span>Si Flamingo Revolution<br>bashkoi Diasporën</span>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy container">
+        <p class="eyebrow">United Diaspora for Albania</p>
+        <h1 id="hero-title">Nga Alpe në Jon</h1>
+        <p class="hero-script">Kjo është trashëgimia jonë</p>
+        <p class="hero-tagline">Komuniteti më i madh i decentralizuar i diasporës shqiptare.</p>
+        <div class="hero-highlights">
+          <a class="hero-highlight" href="rreth-nesh.html#historia">
+            <img src="assets/icons/uda/01_flamingo.png" alt="" aria-hidden="true">
+            <span>Si Revolucioni i Flamingove po bashkon Diasporën Shqiptare</span>
           </a>
-          <a class="intro-card" href="#placeholder">
-            <img class="photo-icon globe" src="assets/icons/world.svg" alt="">
-            <span>Rrënjët në Shqipëri,<br>Degët në 25 vende të botës<br>(Përmes aktivistëve tanë<br>Harta)</span>
+          <a class="hero-highlight" href="rreth-nesh.html#harta">
+            <img src="assets/icons/uda/02_globe.png" alt="" aria-hidden="true">
+            <span>Rrënjët në Shqipëri, Degët në 31 vende të botës</span>
           </a>
         </div>
       </div>
     </section>
 
-    <section class="section activities shell" id="activities" aria-labelledby="activities-title">
-      <p class="section-kicker">Çfarë bëjmë</p>
-      <h2 id="activities-title">Shtyllat tona të aktivizmit</h2>
-      <div class="short-rule"></div>
-      <div class="activity-grid">
-        <a class="feature" href="#placeholder"><img src="assets/icons/megaphone.svg" alt=""><h3>Protestat globale</h3><p>Zëri ynë, fuqia jonë.</p></a>
-        <a class="feature" href="#placeholder"><img src="assets/icons/building-bank.svg" alt=""><h3>Lobim në institucionet ndërkombëtare</h3><p>Për drejtësi dhe llogaridhënie.</p></a>
-        <a class="feature" href="#placeholder"><img src="assets/icons/file-pencil.svg" alt=""><h3>Deklarata dhe qëndrime zyrtare</h3><p>Fjala jonë, pozicioni ynë.</p></a>
-        <a class="feature" href="#placeholder"><img src="assets/icons/ballot-box.svg" alt=""><h3>Referendumi<br>Shfuqizimi 21/2024</h3><p>Votë e lirë, ndryshim i ligjshëm.</p></a>
-        <a class="feature feature--wide" href="#placeholder"><img src="assets/icons/device-desktop.svg" alt=""><h3>Ndërgjegjësimi publik online</h3><p>Informim. Edukim. Mobilizim.</p></a>
-        <a class="feature feature--wide" href="#placeholder"><img src="assets/icons/search.svg" alt=""><h3>Investigimet e pavarura</h3><p>E vërteta na çon përpara.</p></a>
+    <section class="section section-alt" aria-labelledby="pillars-title">
+      <div class="container">
+        <p class="eyebrow">Çfarë bëjmë</p>
+        <h2 id="pillars-title">Shtyllat tona të aktivizmit</h2>
+        <div class="pillar-grid">
+          <a class="icon-card" href="https://pomodoren.github.io/flamingo-map/">
+            <img src="assets/icons/uda/03_megaphone.png" alt=""><h3>Protesta Globale</h3><p>Zëri ynë, fuqia jonë.</p>
+          </a>
+          <a class="icon-card" href="aktivitetet.html#lobim">
+            <img src="assets/icons/uda/05_column.png" alt=""><h3>Lobim në Institucionet Ndërkombëtare</h3><p>Për drejtësi dhe llogaridhënie.</p>
+          </a>
+          <a class="icon-card" href="publikime.html">
+            <img src="assets/icons/uda/04_certificate.png" alt=""><h3>Deklarata dhe Qëndrime Zyrtare</h3><p>Fjala jonë, pozicioni ynë.</p>
+          </a>
+          <a class="icon-card" href="https://flamingo-revolution-26.github.io/Referendum_21-2024/index.html#deklarata">
+            <img src="assets/icons/uda/06_ballot_box.png" alt=""><h3>Referendumi Shfuqizimi 21/2024</h3><p>Votë e lirë, ndryshim i ligjshëm.</p>
+          </a>
+          <a class="icon-card" href="aktivitetet.html#ndergjegjesim">
+            <img src="assets/icons/uda/07_presentation_screen.png" alt=""><h3>Ndërgjegjësimi Publik Online</h3><p>Informim. Edukim. Mobilizim.</p>
+          </a>
+          <a class="icon-card" href="aktivitetet.html#investigime">
+            <img src="assets/icons/uda/08_magnifying_glass.png" alt=""><h3>Investigime të Pavarura</h3><p>E vërteta na çon përpara.</p>
+          </a>
+        </div>
       </div>
     </section>
 
-    <section class="section values shell" id="purpose" aria-labelledby="values-title">
-      <p class="section-kicker">Vlerat e komunitetit</p>
-      <div class="short-rule"></div>
-      <h2 class="visually-hidden" id="values-title">Vlerat e komunitetit</h2>
-      <div class="value-grid">
-        <a class="value" href="#placeholder"><img src="assets/icons/shield.svg" alt=""><h3>Interesi kombëtar shqiptar</h3><p>Mbi çdo gjë.</p></a>
-        <a class="value" href="#placeholder"><img src="assets/icons/users-group.svg" alt=""><h3>Bashkimi i diasporës</h3><p>Të bashkuar, më të fortë.</p></a>
-        <a class="value" href="#placeholder"><img src="assets/icons/scale.svg" alt=""><h3>Pavarësi dhe përgjegjësi</h3><p>Liri mendimi, përgjegjësi veprimi.</p></a>
-        <a class="value" href="#placeholder"><img src="assets/icons/home-heart.svg" alt=""><h3>Familja tradicionale shqiptare</h3><p>Vlerat që na bëjnë të jemi.</p></a>
-        <a class="value" href="#placeholder"><img src="assets/icons/home-eco.svg" alt=""><h3>Mbrojtja e tokës shqiptare</h3><p>E ardhmja jonë, toka jonë.</p></a>
+    <section class="section" aria-labelledby="values-title">
+      <div class="container">
+        <p class="eyebrow">Vlerat e komunitetit</p>
+        <h2 class="visually-hidden" id="values-title">Vlerat e komunitetit</h2>
+        <div class="value-grid">
+          <article class="value-card"><img src="assets/icons/uda/13_albania_map.png" alt=""><h3>Interesi Kombëtar Shqiptar</h3><p>Mbi çdo gjë.</p></article>
+          <article class="value-card"><img src="assets/icons/uda/12_community_circle.png" alt=""><h3>Bashkimi i Diasporës</h3><p>Të bashkuar, më të fortë.</p></article>
+          <article class="value-card"><img src="assets/icons/uda/11_justice_scales.png" alt=""><h3>Pavarësi dhe Përgjegjësi</h3><p>Liri mendimi, përgjegjësi veprimi.</p></article>
+          <article class="value-card"><img src="assets/icons/uda/09_family_heart.png" alt=""><h3>Familja Tradicionale Shqiptare</h3><p>Vlerat që na bëjnë të jemi.</p></article>
+          <article class="value-card"><img src="assets/icons/uda/10_nature_leaves.png" alt=""><h3>Mbrojtja e Tokës Shqiptare</h3><p>E ardhmja jonë, toka jonë.</p></article>
+        </div>
       </div>
     </section>
 
-    <section class="join shell" id="join" aria-labelledby="join-title">
-      <div><h2 id="join-title">Bëhu pjesë e lëvizjes</h2><p>Bashkohu me komunitetin tonë dhe bëhu pjesë<br>e ndryshimit që duam të shohim.</p></div>
-      <div class="join-actions"><a class="button button--solid" href="#placeholder">Bashkohu tani</a><a class="button" href="#placeholder">Na ndiq dhe mbështet</a></div>
+    <section class="section sea-band" aria-label="Nga Alpet në detin Jon"></section>
+
+    <section class="section" aria-labelledby="join-title">
+      <div class="container cta-panel">
+        <div><p class="eyebrow">Bashkohu</p><h2 id="join-title">Bëhu pjesë e lëvizjes</h2><p>Bashkohu me komunitetin tonë dhe bëhu pjesë e ndryshimit që duam të shohim.</p></div>
+        <div class="button-group"><a class="button button-primary" href="bashkohu.html">Bashkohu me ne</a><a class="button button-secondary" href="https://www.instagram.com/uda.network/">Na ndiq dhe mbështet</a></div>
+      </div>
     </section>
   </main>
 
-  <footer id="contact">
-    <div class="footer-inner shell">
-      <div class="footer-brand"><img src="assets/logo.jpeg" alt="United Diaspora for Albania"><p>Rrënjët në Shqipëri.<br>Degët në botë.<br>Zëri ynë, një.</p></div>
-      <nav aria-label="Navigimi në fund"><a href="#about">Rreth nesh</a><a href="#placeholder">Dokumente</a><a href="#placeholder">Publikime</a><a href="#placeholder">Lajme</a><a href="#contact">Kontakt</a></nav>
-      <div class="socials"><a href="#placeholder"><img src="assets/icons/brand-facebook.svg" alt="Facebook"></a><a href="#placeholder"><img src="assets/icons/brand-instagram.svg" alt="Instagram"></a><a href="#placeholder"><img src="assets/icons/brand-youtube.svg" alt="YouTube"></a><a href="#placeholder"><img src="assets/icons/mail.svg" alt="Email"></a></div>
-      <p class="copyright">© <span id="year">2026</span> Të gjitha të drejtat e rezervuara.</p>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><img src="assets/logos/uda-logo-white.png" alt="United Diaspora for Albania"><p>Rrënjët në Shqipëri.<br>Degët në botë.<br>Zëri ynë,<br>Bashkë më i plotë.</p></div>
+      <nav aria-label="Navigimi në fund"><a href="rreth-nesh.html">Rreth nesh</a><a href="publikime.html">Dokumente</a><a href="publikime.html">Publikime</a><a href="aktivitetet.html">Lajme</a><a href="kontakt.html">Kontakt</a></nav>
+      <a class="instagram-link" href="https://www.instagram.com/uda.network/"><img src="assets/icons/brand-instagram.svg" alt="">@uda.network</a>
+      <p class="copyright">© 2026 Të gjitha të drejtat e rezervuara.</p>
     </div>
   </footer>
   <script src="script.js"></script>
