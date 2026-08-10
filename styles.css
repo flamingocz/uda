@@ -58,7 +58,7 @@ p { margin-top: 0; }
 .button-secondary { color: var(--text); background: transparent; border: 1px solid currentColor; }
 .button-secondary:hover { color: var(--surface); background: var(--text); }
 
-.hero { position: relative; display: grid; min-height: min(780px, calc(100vh - 82px)); place-items: center; overflow: hidden; background: url("assets/images/mountains/Mountain B1.png") center 42% / cover no-repeat; isolation: isolate; }
+.hero { position: relative; display: grid; min-height: min(780px, calc(100vh - 82px)); place-items: center; overflow: hidden; background: url("assets/images/mountains/Mountain B2.png") center 42% / cover no-repeat; isolation: isolate; }
 .hero::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(0 0 0 / 45%), rgb(0 0 0 / 70%) 70%, var(--color-gray-dark)); content: ""; }
 .hero-copy { max-width: 960px; padding-block: clamp(5rem, 13vw, 9rem) 4rem; color: #fff; text-align: center; }
 .eyebrow { margin-bottom: .8rem; color: var(--color-red-ui); font-size: .75rem; font-weight: 800; letter-spacing: .28em; text-transform: uppercase; }
