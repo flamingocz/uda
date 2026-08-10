@@ -10,7 +10,7 @@ A lightweight Albanian-language static website built with HTML, CSS, and minimal
 - `qellimi.html`: mission, vision, and objectives
 - `aktivitetet.html`: ongoing activities
 - `publikime.html`: open letters and international-lobbying publications
-- `bashkohu.html`: link to the official membership form
+- “Bashkohu” links open the official external Google membership form directly.
 - `kontakt.html`: approved contact fields; submission remains disabled until an endpoint is supplied
 - `v1-red.html` and `v1-white.html`: preserved legacy versions
 

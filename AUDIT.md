@@ -7,6 +7,7 @@
 - Replaced the old JPEG logo and generic content icons with official UDA assets.
 - Added About, Purpose, Activities, Publications, Join, and Contact pages.
 - Removed unsupported Facebook, YouTube, and email links; only `@uda.network` is presented.
+- Removed the local membership page; all “Bashkohu” links now open the approved Google Form directly.
 - Preserved all legacy v1 files.
 
 ## Asset and crop decisions
