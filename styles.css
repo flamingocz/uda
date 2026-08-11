@@ -252,7 +252,7 @@ p { margin-top: 0; }
   border-right: 0;
 }
 .sea-band { min-height: clamp(260px, 38vw, 480px); padding: 0; background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 30%)), url("assets/images/sea/Sea E1.jpg") center 58% / cover no-repeat; }
-.cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--color-red-ui); border-radius: var(--radius); }
+.cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 0; border-radius: var(--radius); }
 .cta-panel h2 { margin-bottom: .75rem; }
 .cta-panel p:last-child { max-width: 640px; margin-bottom: 0; color: var(--muted); }
 .button-group { display: flex; flex: 0 0 auto; gap: 1rem; }
