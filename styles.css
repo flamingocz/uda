@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Swis721 BT";
+  src: url("assets/Swiss 721 BT.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Swis721 BT";
+  src: url("assets/Swiss 721 Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barely Handwritten";
+  src: url("assets/Barely_Handwritten.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color-red-national: #da2222;
   --color-red-ui: #f00e1a;
@@ -14,9 +38,9 @@
   --gutter: clamp(1rem, 4vw, 3rem);
   --section-space: clamp(4rem, 8vw, 7rem);
   --radius: 8px;
-  --heading: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --body: Calibri, "Segoe UI", Arial, system-ui, sans-serif;
-  --script: "Segoe Print", "Bradley Hand", cursive;
+  --heading: "Swis721 BT", Arial, sans-serif;
+  --body: "Swis721 BT", Arial, sans-serif;
+  --script: "Barely Handwritten", cursive;
   --surface: var(--color-gray-dark);
   --surface-alt: #242424;
   --card: #2d2d2d;
@@ -35,7 +59,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; text-decoration-thickness: .08em; text-underline-offset: .2em; }
 a:hover { color: var(--color-red-ui); }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid var(--color-red-ui); outline-offset: 3px; }
-h1, h2, h3 { margin-top: 0; font-family: var(--heading); line-height: 1.1; }
+h1, h2, h3 { margin-top: 0; font-family: var(--heading); font-weight: 700; line-height: 1.1; }
 p { margin-top: 0; }
 .container { width: min(100% - (2 * var(--gutter)), var(--container)); margin-inline: auto; }
 .skip-link { position: fixed; z-index: 100; top: .5rem; left: .5rem; padding: .75rem 1rem; color: #fff; background: var(--color-red-ui); transform: translateY(-160%); }
@@ -63,7 +87,14 @@ p { margin-top: 0; }
 .hero-copy { max-width: 960px; padding-block: clamp(5rem, 13vw, 9rem) 4rem; color: #fff; text-align: center; }
 .eyebrow { margin-bottom: .8rem; color: var(--color-red-ui); font-size: .75rem; font-weight: 800; letter-spacing: .28em; text-transform: uppercase; }
 .hero h1 { margin-bottom: .25rem; font-size: clamp(2.8rem, 8vw, 6rem); letter-spacing: -.03em; text-transform: uppercase; }
-.hero-script { margin-bottom: 1.25rem; color: var(--color-red-ui); font: clamp(1.8rem, 5vw, 3.5rem)/1.2 var(--script); }
+.hero-script {
+  margin-bottom: 1.25rem;
+  color: var(--color-red-ui);
+  font-family: var(--script);
+  font-size: clamp(1.8rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.2;
+}
 .hero-tagline { max-width: 680px; margin: 0 auto 3rem; font-size: clamp(1rem, 2vw, 1.25rem); font-weight: 600; text-transform: uppercase; }
 .hero-highlights { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 800px; margin-inline: auto; }
 .hero-highlight { display: flex; min-height: 132px; align-items: center; gap: 1.25rem; padding: 1.25rem; color: #fff; background: rgb(0 0 0 / 68%); border: 1px solid rgb(255 255 255 / 18%); border-radius: var(--radius); font-size: 1rem; text-align: left; text-decoration: none; }
