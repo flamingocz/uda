@@ -124,7 +124,17 @@ p { margin-top: 0; }
 .cta-panel h2 { margin-bottom: .75rem; }
 .cta-panel p:last-child { max-width: 640px; margin-bottom: 0; color: var(--muted); }
 .button-group { display: flex; flex: 0 0 auto; gap: 1rem; }
-
+.pillar-grid .icon-card {
+  position: relative;
+  padding: 2rem;
+  color: #000;
+  background: #D8DADB;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+  overflow: hidden;
+}
 .site-footer { padding-block: 3rem 1.5rem; color: #fff; background: #000; border-top: 3px solid var(--color-red-ui); }
 .footer-grid { display: grid; grid-template-columns: 1.2fr 2fr 1fr; align-items: center; gap: 2rem; }
 .footer-brand { display: flex; align-items: center; gap: 1rem; }
