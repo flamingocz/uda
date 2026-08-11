@@ -234,7 +234,7 @@ p { margin-top: 0; }
 .value-card h3 {
   grid-column: 2;
   margin: 0 0 .45rem;
-  color: var(--text);
+  color: #111111;
   font-family: var(--heading);
   font-size: 1.15rem;
   font-weight: 700;
@@ -245,7 +245,7 @@ p { margin-top: 0; }
 .value-card p {
   grid-column: 2;
   margin: 0;
-  color: var(--muted);
+  color: #4e4e4e;
   font-family: var(--body);
   font-size: .9rem;
   line-height: 1.5;
