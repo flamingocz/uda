@@ -110,7 +110,7 @@ p { margin-top: 0; }
 }
 
 .values-section {
-  background: #f2f2f0;
+  background: #f2f2f0 !important;
   color: #000;
 }
 
