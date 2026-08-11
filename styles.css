@@ -122,6 +122,15 @@ p { margin-top: 0; }
   object-fit: contain;
 }
 .icon-card h3, .value-card h3 { margin-bottom: .6rem; font-size: 1.05rem; color: var(--color-gray-dark); text-transform: uppercase; }
+.value-card h3 {
+  margin: 0 0 .35rem;
+  font-family: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-gray-dark);
+  text-transform: uppercase;
+  line-height: 1.15;
+}
 .pillar-grid .icon-card h3 {
   margin: 0 0 .75rem;
   color: #000;
@@ -132,6 +141,13 @@ p { margin-top: 0; }
   text-transform: uppercase;
 }
 .icon-card p, .value-card p { margin-bottom: 0; color: var(--color-gray-medium); }
+.value-card p {
+  margin: .35rem 0 0;
+  color: var(--color-gray-medium);
+  font-family: var(--body);
+  font-size: .95rem;
+  line-height: 1.5;
+}
 .pillar-grid .icon-card p {
   margin: 0;
   color: #000;
@@ -146,10 +162,47 @@ p { margin-top: 0; }
   margin-top: 1.5rem;
   background: #DA2222;
 }
-.value-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; max-width: 900px; margin-inline: auto; background: transparent; }
-.value-card { border-radius: 0; box-shadow: none; text-align: center; }
-.value-card:last-child { grid-column: 1 / -1; width: 50%; justify-self: center; background: var(--card); }
-.value-card img { width: 72px; height: 72px; }
+.value-grid {
+  display: grid;
+  max-width: 1000px;
+  margin-inline: auto;
+  background: transparent;
+}
+.value-card {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  column-gap: 1.5rem;
+  align-items: center;
+  padding: 1.5rem 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgb(0 0 0 / 16%);
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+}
+.value-card::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+  font-family: var(--heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-red-national);
+  letter-spacing: .04em;
+}
+.value-card:nth-child(1)::before { content: "01"; }
+.value-card:nth-child(2)::before { content: "02"; }
+.value-card:nth-child(3)::before { content: "03"; }
+.value-card:nth-child(4)::before { content: "04"; }
+.value-card:nth-child(5)::before { content: "05"; }
+.value-card img {
+  width: 52px;
+  height: 52px;
+  margin: 0;
+  object-fit: contain;
+}
 .sea-band { min-height: clamp(260px, 38vw, 480px); padding: 0; background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 30%)), url("assets/images/sea/Sea E1.jpg") center 58% / cover no-repeat; }
 .cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--color-red-ui); border-radius: var(--radius); }
 .cta-panel h2 { margin-bottom: .75rem; }
