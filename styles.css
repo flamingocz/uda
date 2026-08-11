@@ -164,44 +164,81 @@ p { margin-top: 0; }
 }
 .value-grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
   max-width: 1000px;
   margin-inline: auto;
-  background: transparent;
 }
+
 .value-card {
+  position: relative;
   display: grid;
-  grid-template-columns: 72px 1fr;
-  column-gap: 1.5rem;
-  align-items: center;
-  padding: 1.5rem 0;
+  grid-template-columns: 64px 1fr;
+  column-gap: 1.25rem;
+  align-items: start;
+  padding: 2rem 1.5rem;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid rgb(0 0 0 / 16%);
+  border-bottom: 1px solid rgb(255 255 255 / 16%);
   border-radius: 0;
   box-shadow: none;
   text-align: left;
 }
+
+.value-card:nth-child(odd) {
+  border-right: 1px solid rgb(255 255 255 / 16%);
+}
+
 .value-card::before {
   content: "";
   grid-column: 1;
   grid-row: 1 / span 2;
-  align-self: center;
   font-family: var(--heading);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
+  line-height: 1;
   color: var(--color-red-national);
-  letter-spacing: .04em;
+  letter-spacing: -.04em;
 }
+
 .value-card:nth-child(1)::before { content: "01"; }
 .value-card:nth-child(2)::before { content: "02"; }
 .value-card:nth-child(3)::before { content: "03"; }
 .value-card:nth-child(4)::before { content: "04"; }
 .value-card:nth-child(5)::before { content: "05"; }
+
 .value-card img {
-  width: 52px;
-  height: 52px;
-  margin: 0;
+  width: 48px;
+  height: 48px;
+  margin: 0 0 .75rem;
   object-fit: contain;
+}
+
+.value-card h3 {
+  grid-column: 2;
+  margin: 0 0 .45rem;
+  color: var(--text);
+  font-family: var(--heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.value-card p {
+  grid-column: 2;
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--body);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.value-card:last-child {
+  grid-column: 1 / -1;
+  width: 50%;
+  justify-self: center;
+  border-right: 0;
 }
 .sea-band { min-height: clamp(260px, 38vw, 480px); padding: 0; background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 30%)), url("assets/images/sea/Sea E1.jpg") center 58% / cover no-repeat; }
 .cta-panel { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(1.5rem, 4vw, 3rem); border: 2px solid var(--color-red-ui); border-radius: var(--radius); }
@@ -291,8 +328,29 @@ textarea { min-height: 170px; resize: vertical; }
 
 @media (max-width: 680px) {
   .hero-highlights, .pillar-grid, .content-grid, .location-groups, .form-grid { grid-template-columns: 1fr; }
-  .value-card { padding-inline: .75rem; }
-  .value-card h3 { font-size: .9rem; }
+  .  .value-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    grid-template-columns: 56px 1fr;
+    padding: 1.5rem .75rem;
+    border-right: 0 !important;
+  }
+
+  .value-card:last-child {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .value-card::before {
+    font-size: 2rem;
+  }
+
+  .value-card h3 {
+    font-size: .9rem;
+  }
+
   .hero-highlight { min-height: auto; }
   .cta-panel, .publication-card { align-items: stretch; flex-direction: column; grid-template-columns: 1fr; }
   .cta-panel { display: flex; }
