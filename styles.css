@@ -100,9 +100,26 @@ p { margin-top: 0; }
 .hero-highlight { display: flex; min-height: 132px; align-items: center; gap: 1.25rem; padding: 1.25rem; color: #fff; background: rgb(0 0 0 / 68%); border: 1px solid rgb(255 255 255 / 18%); border-radius: var(--radius); font-size: 1rem; text-align: left; text-decoration: none; }
 .hero-highlight img { width: 76px; height: 76px; flex: 0 0 76px; object-fit: contain; }
 
-.section { padding-block: var(--section-space); background: var(--surface); }
-.section-alt { background: var(--surface-alt); }
-.section h2, .page-hero h1 { margin-bottom: 2.5rem; font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase; }
+.section {
+  padding-block: var(--section-space);
+  background: var(--surface);
+}
+
+.section-alt {
+  background: var(--surface-alt);
+}
+
+.values-section {
+  background: #f2f2f0;
+  color: #000;
+}
+
+.section h2,
+.page-hero h1 {
+  margin-bottom: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  text-transform: uppercase;
+}
 .pillar-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .icon-card, .value-card, .content-card, .publication-card {
   padding: clamp(1.3rem, 3vw, 2rem);
