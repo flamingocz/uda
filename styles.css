@@ -120,8 +120,8 @@ p { margin-top: 0; }
 }
 
 .values-section {
-  background: #f2f2f0 !important;
-  color: #000;
+  background: var(--surface);
+  color: var(--text);
 }
 
 .section h2,
