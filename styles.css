@@ -400,3 +400,8 @@ textarea { min-height: 170px; resize: vertical; }
     linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 45%)),
     url("assets/images/sea/Sea E4.jpg");
 }
+.page-hero-purpose {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 35%), rgb(0 0 0 / 60%)),
+    url("assets/images/mountains/Mountain E3.jpg");
+}
