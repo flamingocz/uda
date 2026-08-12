@@ -444,3 +444,11 @@ textarea { min-height: 170px; resize: vertical; }
     linear-gradient(rgb(0 0 0 / 25%), rgb(0 0 0 / 50%)),
     url("assets/images/sea/Sea E6.jpg");
 }
+.values-section .value-card h3 {
+  font-family: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.05;
+  text-transform: uppercase;
+  color: #111111;
+}
