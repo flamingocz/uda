@@ -200,11 +200,11 @@ p { margin-top: 0; }
   column-gap: 1.25rem;
   align-items: start;
   padding: 2rem 1.5rem;
-  background: transparent;
-  border: 0;
+  background: #da2222;
+  border: 1px solid rgb(255 255 255 / 18%);
   border-bottom: 1px solid rgb(255 255 255 / 16%);
-  border-radius: 0;
-  box-shadow: none;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgb(0 0 0 / 18%);
   text-align: left;
 }
 
@@ -213,15 +213,7 @@ p { margin-top: 0; }
 }
 
 .value-card::before {
-  content: "";
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  font-family: var(--heading);
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--color-red-national);
-  letter-spacing: -.04em;
+  content: none;
 }
 
 .value-card img {
