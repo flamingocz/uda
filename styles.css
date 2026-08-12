@@ -464,3 +464,12 @@ textarea { min-height: 170px; resize: vertical; }
   letter-spacing: normal;
   text-transform: uppercase;
 }
+.values-section .value-card {
+  background: #DA2222;
+  color: #fff;
+}
+
+.values-section .value-card h3,
+.values-section .value-card p {
+  color: #fff;
+}
