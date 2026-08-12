@@ -382,3 +382,16 @@ textarea { min-height: 170px; resize: vertical; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+.page-footer-image {
+  width: 100%;
+  min-height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page-footer-about {
+  background-image:
+    linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 45%)),
+    url("assets/images/sea/Sea E2.jpg");
+}
