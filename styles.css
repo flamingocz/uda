@@ -452,3 +452,11 @@ textarea { min-height: 170px; resize: vertical; }
   text-transform: uppercase;
   color: #111111;
 }
+.values-section .value-card h3 {
+  font-family: var(--heading) !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  line-height: 1.05 !important;
+  text-transform: uppercase !important;
+  color: #111111 !important;
+}
