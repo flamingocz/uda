@@ -454,3 +454,13 @@ textarea { min-height: 170px; resize: vertical; }
   line-height: 1.05;
   text-transform: uppercase;
 }
+.values-section > .container > .eyebrow {
+  margin-bottom: 2.5rem;
+  color: var(--text);
+  font-family: var(--heading);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
