@@ -119,11 +119,6 @@ p { margin-top: 0; }
   background: var(--surface-alt);
 }
 
-.values-section {
-  background: var(--surface);
-  color: var(--text);
-}
-
 .section h2,
 .page-hero h1 {
   margin-bottom: 2.5rem;
