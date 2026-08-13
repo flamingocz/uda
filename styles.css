@@ -21,7 +21,13 @@
   font-style: normal;
   font-display: swap;
 }
-
+@font-face {
+  font-family: "Swiss 721 Italic";
+  src: url("assets/Swiss721BT-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
 :root {
   --color-red-national: #da2222;
   --color-red-ui: #da2222;
@@ -89,7 +95,7 @@ p { margin-top: 0; }
 .hero-script {
   margin-bottom: 1.25rem;
   color: var(--color-red-ui);
-  font-family: "Barely Handwritten", cursive;
+  font-family: "Swiss 721 Italic", sans-serif;
   font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: 400;
   line-height: 1.2;
