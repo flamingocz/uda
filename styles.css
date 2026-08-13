@@ -884,3 +884,15 @@ textarea { min-height: 170px; resize: vertical; }
     0 0 0 7px rgba(229, 43, 43, 0.15),
     0 0 20px rgba(229, 43, 43, 0.9);
 }
+.hero-emblem {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.hero-emblem img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(220, 40, 40, 0.25));
+}
