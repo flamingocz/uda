@@ -846,3 +846,41 @@ textarea { min-height: 170px; resize: vertical; }
     grid-template-columns: 1fr;
   }
 }
+/* =========================================
+   31 JURISDIKSIONET - HARTA
+   ========================================= */
+
+.map-placeholder {
+  position: relative;
+}
+
+.map-points {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.map-point {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 3px solid rgba(229, 43, 43, 0.35);
+  border-radius: 50%;
+  background: #e52b2b;
+  box-shadow:
+    0 0 0 4px rgba(229, 43, 43, 0.12),
+    0 0 14px rgba(229, 43, 43, 0.75);
+  pointer-events: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.map-point:hover {
+  transform: translate(-50%, -50%) scale(1.5);
+  box-shadow:
+    0 0 0 7px rgba(229, 43, 43, 0.15),
+    0 0 20px rgba(229, 43, 43, 0.9);
+}
