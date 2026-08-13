@@ -636,3 +636,213 @@ textarea { min-height: 170px; resize: vertical; }
   text-transform: none !important;
   font-family: "Barely Handwritten", cursive !important;
 }
+/* =========================================
+   HARTA E DIASPORËS
+   ========================================= */
+
+.map-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.map-intro {
+  max-width: 650px;
+  margin-top: 0.75rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+.map-count {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-shrink: 0;
+}
+
+.map-count strong {
+  color: var(--color-red-ui);
+  font-size: 3.5rem;
+  line-height: 0.9;
+  font-weight: 800;
+}
+
+.map-count span {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+/* Zona e hartës */
+
+.diaspora-map {
+  width: 100%;
+}
+
+.map-placeholder {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  border: 1px solid rgba(218, 34, 34, 0.25);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 50% 50%, rgba(218, 34, 34, 0.08), transparent 55%),
+    #111;
+}
+
+/* Shkëlqimi në qendër */
+
+.map-glow {
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(218, 34, 34, 0.12),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+
+/* Etiketat */
+
+.map-label {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.map-dot,
+.legend-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-red-ui);
+  box-shadow: 0 0 12px rgba(218, 34, 34, 0.8);
+}
+
+.map-label-europe {
+  top: 32%;
+  left: 47%;
+}
+
+.map-label-usa {
+  top: 45%;
+  left: 21%;
+}
+
+.map-label-canada {
+  top: 36%;
+  left: 20%;
+}
+
+.map-label-asia {
+  top: 40%;
+  right: 22%;
+}
+
+.map-label-australia {
+  bottom: 24%;
+  right: 18%;
+}
+
+/* Mesazhi qendror */
+
+.map-center-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.map-center-message span {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-red-ui);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+}
+
+.map-center-message strong {
+  display: block;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+/* Legjenda */
+
+.map-legend {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 1rem;
+  border: 1px solid rgba(218, 34, 34, 0.15);
+  border-radius: 10px;
+  background: rgba(218, 34, 34, 0.04);
+}
+
+.map-legend-item strong,
+.map-legend-item small {
+  display: block;
+}
+
+.map-legend-item strong {
+  font-size: 0.85rem;
+}
+
+.map-legend-item small {
+  margin-top: 0.2rem;
+  color: var(--color-muted);
+  font-size: 0.72rem;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .map-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .map-count {
+    align-items: flex-start;
+  }
+
+  .map-placeholder {
+    min-height: 420px;
+  }
+
+  .map-legend {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 520px) {
+  .map-placeholder {
+    min-height: 360px;
+  }
+
+  .map-legend {
+    grid-template-columns: 1fr;
+  }
+}
