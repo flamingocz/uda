@@ -89,7 +89,7 @@ p { margin-top: 0; }
 .hero-script {
   margin-bottom: 1.25rem;
   color: var(--color-red-ui);
-  font-family: var(--script);
+  font-family: "Barely Handwritten", cursive;
   font-size: clamp(1.8rem, 5vw, 3.5rem);
   font-weight: 400;
   line-height: 1.2;
