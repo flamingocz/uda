@@ -618,3 +618,7 @@ textarea { min-height: 170px; resize: vertical; }
   max-width: 48px !important;
   max-height: 48px !important;
 }
+.hero .hero-script {
+  text-transform: none !important;
+  font-family: "Barely Handwritten", cursive !important;
+}
