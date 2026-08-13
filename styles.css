@@ -636,186 +636,148 @@ textarea { min-height: 170px; resize: vertical; }
   text-transform: none !important;
   font-family: "Barely Handwritten", cursive !important;
 }
-/* =========================================
+/* =========================
    HARTA E DIASPORËS
-   ========================================= */
-
-.map-heading {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-bottom: 2.5rem;
-}
-
-.map-intro {
-  max-width: 650px;
-  margin-top: 0.75rem;
-  color: var(--color-muted);
-  line-height: 1.6;
-}
-
-.map-count {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  flex-shrink: 0;
-}
-
-.map-count strong {
-  color: var(--color-red-ui);
-  font-size: 3.5rem;
-  line-height: 0.9;
-  font-weight: 800;
-}
-
-.map-count span {
-  margin-top: 0.4rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-}
-
-/* Zona e hartës */
+   ========================= */
 
 .diaspora-map {
   width: 100%;
+  display: block;
 }
 
+/* Vetëm harta */
 .map-placeholder {
   position: relative;
-  min-height: 520px;
+  width: 100%;
   overflow: hidden;
-  border: 1px solid rgba(218, 34, 34, 0.25);
   border-radius: 18px;
-  background:
-    radial-gradient(circle at 50% 50%, rgba(218, 34, 34, 0.08), transparent 55%),
-    #111;
+  background: #111;
+  border: 1px solid rgba(220, 40, 40, 0.35);
+  line-height: 0;
 }
 
-/* Shkëlqimi në qendër */
+/* SVG */
+.world-map {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-.map-glow {
+/* Shtresa e pikave */
+.map-points {
   position: absolute;
-  inset: 15%;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(218, 34, 34, 0.12),
-    transparent 65%
-  );
+  inset: 0;
+  z-index: 5;
   pointer-events: none;
 }
 
-/* Etiketat */
-
-.map-label {
+/* Pikat */
+.map-point {
   position: absolute;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.map-dot,
-.legend-dot {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--color-red-ui);
-  box-shadow: 0 0 12px rgba(218, 34, 34, 0.8);
-}
-
-.map-label-europe {
-  top: 32%;
-  left: 47%;
-}
-
-.map-label-usa {
-  top: 45%;
-  left: 21%;
-}
-
-.map-label-canada {
-  top: 36%;
-  left: 20%;
-}
-
-.map-label-asia {
-  top: 40%;
-  right: 22%;
-}
-
-.map-label-australia {
-  bottom: 24%;
-  right: 18%;
-}
-
-/* Mesazhi qendror */
-
-.map-center-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
+  border: 0;
+  border-radius: 50%;
+  background: #e52f2f;
+  box-shadow:
+    0 0 0 5px rgba(229, 47, 47, 0.18),
+    0 0 18px rgba(229, 47, 47, 0.65);
+  pointer-events: auto;
+  cursor: pointer;
 }
 
-.map-center-message span {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: var(--color-red-ui);
-  font-size: 0.75rem;
-  font-weight: 800;
-  letter-spacing: 0.3em;
+/* Hover */
+.map-point:hover {
+  transform: translate(-50%, -50%) scale(1.25);
+  background: #ff3b3b;
 }
 
-.map-center-message strong {
-  display: block;
-  font-size: 1.15rem;
-  line-height: 1.5;
-}
-
-/* Legjenda */
+/* =========================
+   LEGJENDA — POSHTË HARTËS
+   ========================= */
 
 .map-legend {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.75rem;
-  margin-top: 1rem;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 14px;
 }
 
+/* Kutitë */
 .map-legend-item {
+  min-height: 76px;
+  box-sizing: border-box;
+
   display: flex;
   align-items: center;
-  gap: 0.7rem;
-  padding: 1rem;
-  border: 1px solid rgba(218, 34, 34, 0.15);
-  border-radius: 10px;
-  background: rgba(218, 34, 34, 0.04);
+  gap: 14px;
+
+  padding: 16px 18px;
+
+  background: #f7eeee;
+  border: 1px solid rgba(229, 47, 47, 0.22);
+  border-radius: 12px;
+
+  color: #111;
 }
 
-.map-legend-item strong,
-.map-legend-item small {
-  display: block;
+/* Pika e legjendës */
+.legend-dot {
+  flex: 0 0 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e52f2f;
+  box-shadow: 0 0 10px rgba(229, 47, 47, 0.45);
+}
+
+/* Teksti */
+.map-legend-item div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .map-legend-item strong {
-  font-size: 0.85rem;
+  font-size: 15px;
+  line-height: 1.2;
 }
 
 .map-legend-item small {
-  margin-top: 0.2rem;
-  color: var(--color-muted);
-  font-size: 0.72rem;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #333;
 }
 
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .map-legend {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .map-legend {
+    grid-template-columns: 1fr;
+  }
+
+  .map-point {
+    width: 13px;
+    height: 13px;
+  }
+
+  .map-legend-item {
+    min-height: 64px;
+    padding: 13px 15px;
+  }
+}
 /* Mobile */
 
 @media (max-width: 800px) {
