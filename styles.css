@@ -544,7 +544,7 @@ textarea { min-height: 170px; resize: vertical; }
   justify-content: center;
   align-items: center;
   margin-bottom: 0.2rem;
-  transform: translateY(-35px);
+  transform: translateY(-70px);
 }
 
 .hero-emblem img {
