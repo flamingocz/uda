@@ -1140,7 +1140,7 @@ textarea { min-height: 170px; resize: vertical; }
 
 .site-header .brand img {
   display: block;
-  width: 95px;
+  width: 120px;
   height: 64px;
   object-fit: contain;
   object-position: left center;
@@ -1153,7 +1153,7 @@ textarea { min-height: 170px; resize: vertical; }
   }
 
   .site-header .brand img {
-    width: 95px;
+    width: 120px;
     height: 64px;
   }
 }
