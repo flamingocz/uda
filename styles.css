@@ -356,16 +356,36 @@ textarea { min-height: 170px; resize: vertical; }
 
 @media (max-width: 680px) {
   .hero-highlights, .pillar-grid, .content-grid, .location-groups, .form-grid { grid-template-columns: 1fr; }
-  .  .value-grid {
+  .value-grid {
     grid-template-columns: 1fr;
   }
 
-  .value-card {
-    grid-template-columns: 56px 1fr;
-    padding: 1.5rem .75rem;
-    border-right: 0 !important;
-  }
+.value-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  padding: 1.5rem 1.25rem;
+  border-right: 0 !important;
+  min-height: auto;
+}
+.value-card img {
+  width: 52px;
+  height: 52px;
+  margin: 0 0 .8rem;
+}
 
+.value-card h3 {
+  margin: 0 0 .45rem;
+  font-size: 1.05rem;
+  line-height: 1.15;
+}
+
+.value-card p {
+  margin: 0;
+  font-size: .88rem;
+  line-height: 1.45;
+}
   .value-card:last-child {
     grid-column: auto;
     width: 100%;
