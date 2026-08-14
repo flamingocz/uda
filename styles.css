@@ -1128,32 +1128,32 @@ textarea { min-height: 170px; resize: vertical; }
     font-size: 26px;
   }
 }
-/* Pozicioni dhe madhësia e logos së bardhë */
+/* LOGO HEADER — madhësi dhe pozicion i njëjtë në të gjitha faqet */
+
+.site-header .site-nav {
+  min-height: 82px;
+  align-items: center;
+}
+
 .site-header .brand {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex: 0 0 120px;
+  width: 120px;
   height: 64px;
+  margin: 0;
+  padding: 0;
   overflow: visible;
 }
 
 .site-header .brand img {
   display: block;
-  width: 120px;
-  height: 64px;
+  width: 120px !important;
+  height: 64px !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
   object-fit: contain;
   object-position: left center;
-  margin: 0;
-}
-
-@media (max-width: 680px) {
-  .site-header .brand {
-    flex-basis: 120px;
-  }
-
-  .site-header .brand img {
-    width: 120px;
-    height: 64px;
-  }
 }
