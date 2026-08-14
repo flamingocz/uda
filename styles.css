@@ -995,3 +995,136 @@ textarea { min-height: 170px; resize: vertical; }
   object-fit: contain;
   filter: drop-shadow(0 0 10px rgba(220, 40, 40, 0.25));
 }
+/* =========================================
+   GALERIA / LIGHTBOX
+   ========================================= */
+
+.gallery-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.92);
+}
+
+.gallery-lightbox.is-open {
+  display: flex;
+}
+
+.gallery-lightbox-image {
+  max-width: min(90vw, 1200px);
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+
+.gallery-lightbox-close,
+.gallery-lightbox-prev,
+.gallery-lightbox-next {
+  position: absolute;
+  z-index: 2;
+  border: 0;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-lightbox-close:hover,
+.gallery-lightbox-prev:hover,
+.gallery-lightbox-next:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.gallery-lightbox-close {
+  top: 20px;
+  right: 25px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.gallery-lightbox-prev,
+.gallery-lightbox-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 52px;
+  height: 70px;
+  border-radius: 8px;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.gallery-lightbox-prev {
+  left: 20px;
+}
+
+.gallery-lightbox-next {
+  right: 20px;
+}
+
+.gallery-lightbox-prev:hover,
+.gallery-lightbox-next:hover {
+  transform: translateY(-50%) scale(1.05);
+}
+
+.gallery-lightbox-counter {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+}
+
+/* Fotot e galerive bëhen të klikueshme */
+.carousel-grid img {
+  cursor: zoom-in;
+}
+
+/* Telefon */
+@media (max-width: 680px) {
+  .gallery-lightbox {
+    padding: 15px;
+  }
+
+  .gallery-lightbox-image {
+    max-width: 94vw;
+    max-height: 78vh;
+  }
+
+  .gallery-lightbox-prev,
+  .gallery-lightbox-next {
+    width: 44px;
+    height: 58px;
+    font-size: 30px;
+  }
+
+  .gallery-lightbox-prev {
+    left: 8px;
+  }
+
+  .gallery-lightbox-next {
+    right: 8px;
+  }
+
+  .gallery-lightbox-close {
+    top: 12px;
+    right: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
+  }
+}
