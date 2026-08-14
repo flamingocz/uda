@@ -382,6 +382,7 @@ textarea { min-height: 170px; resize: vertical; }
     grid-column: auto;
     width: 100%;
     justify-self: stretch;
+    min-height: auto;
   }
 
   .value-card img {
