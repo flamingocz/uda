@@ -1128,3 +1128,13 @@ textarea { min-height: 170px; resize: vertical; }
     font-size: 26px;
   }
 }
+/* Madhësia e logos së bardhë në header */
+.site-header .brand img {
+  width: 110px;
+  height: auto;
+}
+@media (max-width: 680px) {
+  .site-header .brand img {
+    width: 95px;
+  }
+}
