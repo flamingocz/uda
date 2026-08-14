@@ -780,7 +780,12 @@ textarea { min-height: 170px; resize: vertical; }
 }
 /* Mobile */
 
+/* =========================
+   HARTA - RESPONSIVE
+   ========================= */
+
 @media (max-width: 800px) {
+
   .map-heading {
     align-items: flex-start;
     flex-direction: column;
@@ -791,21 +796,44 @@ textarea { min-height: 170px; resize: vertical; }
   }
 
   .map-placeholder {
-    min-height: 420px;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .world-map {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
   }
 
   .map-legend {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 520px) {
+
   .map-placeholder {
-    min-height: 360px;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+  }
+
+  .world-map {
+    width: 100%;
+    height: auto;
   }
 
   .map-legend {
     grid-template-columns: 1fr;
+  }
+
+  .map-point {
+    width: 12px;
+    height: 12px;
   }
 }
 /* =========================================
