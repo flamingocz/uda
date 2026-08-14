@@ -355,59 +355,94 @@ textarea { min-height: 170px; resize: vertical; }
 }
 
 @media (max-width: 680px) {
-  .hero-highlights, .pillar-grid, .content-grid, .location-groups, .form-grid { grid-template-columns: 1fr; }
-  .value-grid {
+  .hero-highlights,
+  .pillar-grid,
+  .content-grid,
+  .location-groups,
+  .form-grid {
     grid-template-columns: 1fr;
   }
 
-.value-card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
-  padding: 1.5rem 1.25rem;
-  border-right: 0 !important;
-  min-height: auto;
-}
-.value-card img {
-  width: 52px;
-  height: 52px;
-  margin: 0 0 .8rem;
-}
+  .value-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
 
-.value-card h3 {
-  margin: 0 0 .45rem;
-  font-size: 1.05rem;
-  line-height: 1.15;
-}
+  .value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: auto;
+    padding: 1.5rem 1.25rem;
+    border-right: 0 !important;
+  }
 
-.value-card p {
-  margin: 0;
-  font-size: .88rem;
-  line-height: 1.45;
-}
   .value-card:last-child {
     grid-column: auto;
     width: 100%;
+    justify-self: stretch;
   }
 
-  .value-card::before {
-    font-size: 2rem;
+  .value-card img {
+    width: 52px;
+    height: 52px;
+    margin: 0 0 .8rem;
   }
 
   .value-card h3 {
+    margin: 0 0 .45rem;
     font-size: 1.25rem;
+    line-height: 1.15;
   }
 
-  .hero-highlight { min-height: auto; }
-  .cta-panel, .publication-card { align-items: stretch; flex-direction: column; grid-template-columns: 1fr; }
-  .cta-panel { display: flex; }
-  .button-group { flex-direction: column; }
-  .footer-grid { grid-template-columns: 1fr; justify-items: center; text-align: center; }
-  .site-footer nav { justify-content: center; }
-  .copyright, .form-field-full { grid-column: auto; }
-  .carousel-grid { grid-template-columns: 1fr; }
-  .carousel-grid img { height: auto; }
+  .value-card p {
+    margin: 0;
+    font-size: .88rem;
+    line-height: 1.45;
+  }
+
+  .hero-highlight {
+    min-height: auto;
+  }
+
+  .cta-panel,
+  .publication-card {
+    align-items: stretch;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-panel {
+    display: flex;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .site-footer nav {
+    justify-content: center;
+  }
+
+  .copyright,
+  .form-field-full {
+    grid-column: auto;
+  }
+
+  .carousel-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carousel-grid img {
+    height: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
