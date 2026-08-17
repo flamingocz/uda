@@ -470,8 +470,6 @@ textarea { min-height: 170px; resize: vertical; }
   .instagram-link {
     justify-content: center;
   }
-}
-
   .value-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
