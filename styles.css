@@ -91,9 +91,9 @@ p { margin-top: 0; }
 .hero::before { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(0 0 0 / 45%), rgb(0 0 0 / 70%) 70%, var(--color-gray-dark)); content: ""; }
 .hero-copy { max-width: 960px; padding-block: clamp(5rem, 13vw, 9rem) 4rem; color: #fff; text-align: center; }
 .hero .eyebrow {
-  margin-top: -2rem;
+  margin-top: -4rem;
   margin-bottom: 0.8rem;
-  color: var(--color-red-ui);
+  color: #b51212;
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: .28em;
